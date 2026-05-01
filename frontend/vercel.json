@@ -1,18 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/react-build",
-      "config": {
-        "distDir": "frontend/build"
-      }
-    }
-  ],
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://wumpus-world-app.up.railway.app/api/\$1"
+      "source": "/api/:path*",
+      "destination": "https://wumpusworldapp-production.up.railway.app/:path*"
     }
   ]
 }
