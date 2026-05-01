@@ -3,16 +3,16 @@
   "builds": [
     {
       "src": "frontend/package.json",
-      "use": "@vercel/react-build",
+      "use": "@vercel/static-build",
       "config": {
-        "distDir": "frontend/build"
+        "distDir": "build"
       }
     }
   ],
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://wumpus-world-app.up.railway.app/api/\$1"
+      "destination": "https://wumpusworldapp-production.up.railway.app/api/$1"
     }
   ]
 }
