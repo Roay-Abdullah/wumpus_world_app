@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://wumpusworldapp-production.up.railway.app/:path*"
+      "destination": "https://wumpusworldapp-production-f75c.up.railway.app/:path*"
     }
   ]
 }
