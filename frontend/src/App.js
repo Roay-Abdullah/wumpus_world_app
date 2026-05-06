@@ -17,7 +17,7 @@ setLoading(true);
 setError(null);
 setMessage('');
 try {
-const response = await axios.post(`${API_URL}/api/game/new`, gridSize);
+const response = await axios.post("/api/game/new", gridSize);
 setGameState(response.data.state);
 setMessage('New game started! Use the controls to navigate or let AI auto-move.');
 } catch (err) {
